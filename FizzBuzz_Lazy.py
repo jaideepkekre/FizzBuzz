@@ -1,4 +1,4 @@
-x=range(1,100,1)
+x=range(1,101,1)
 three=False
 five=False
 for number in x :
@@ -8,12 +8,12 @@ for number in x :
 		three = True
 	if number% 5 == 0 :
 		five = True
-	if five:
-		T_print = "Buzz"
-	if three:
-		T_print="Fizz"
 	if three and five :
 		T_print="FizzBuzz"
+	elif five:
+		T_print = "Buzz"
+	elif three:
+		T_print="Fizz"	
 	three = False
 	five = False
 	print T_print
